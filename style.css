@@ -133,7 +133,7 @@ button:hover {
     }
     .card {
         width: 180px;
-        margin: 10px auto;
+        margin: 20px auto;
         padding: 20px;
         position: relative;
     }
@@ -155,8 +155,6 @@ button:hover {
         display: inline-block;
         bottom: 0;
         height: 15px;
-        display : table-row;
-        vertical-align : bottom;
     }
 
     .footer p, .footer p a {
