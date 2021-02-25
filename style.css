@@ -1,7 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+html, body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    max-height: 100%;
 }
 
 /* Light Mode */
@@ -13,6 +18,7 @@ body {
     margin: 80px auto;
     padding: 40px;
     border-radius: 20px;
+    position: relative;
 }
 
 h1 {
@@ -29,11 +35,11 @@ p {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 80px;
     border: none;
     background: rgb(118, 18, 212);
     color: white;
-    margin: 20px 0;
+    margin: 70px 0;
     cursor: pointer;
     transition: 1s;
 }
@@ -66,3 +72,94 @@ button:hover {
 .p-purple {
     color: rgb(199, 199, 199);
 }
+
+.button-purple {
+    background: rgb(213, 179, 245);
+    color: rgb(95, 16, 168);
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer h3 {
+    font-size: 13px;
+    margin: -10px 0;
+    text-align: center;
+    color: rgb(134, 55, 207);
+}
+
+.footer p {
+    margin: 14px 0;
+    text-align: center;
+    color: rgb(219, 182, 253);
+    font-size: 14px;
+}
+
+.footer p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(226, 195, 255);
+    background-color: blueviolet;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+
+.footer-purple {
+    color: rgb(213, 179, 245);
+    background-color: rgb(95, 16, 168);
+}
+
+.text-white {
+    color: white !important;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) { 
+    body {
+        overflow-y: hidden;
+        max-height: 100%;
+    }
+    .card {
+        width: 180px;
+        margin: 10px auto;
+        padding: 20px;
+        position: relative;
+    }
+    h1 {
+        font-size: 23px;
+        margin: 0;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    button {
+        padding: 10px 44px;
+        margin: 20px 0;
+    }
+
+    .footer {
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        height: 15px;
+        display : table-row;
+        vertical-align : bottom;
+    }
+
+    .footer p, .footer p a {
+        font-size: 12px;
+    }
+ }
